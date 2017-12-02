@@ -18,7 +18,6 @@
 .logoutbutton {
   float: right;
   margin-right: 12px;
-  margin-top: 14px;
   display: inline-block;
   padding: 0;
   border: none;
@@ -41,30 +40,57 @@
   border-left-style: solid;
 }
 
+.container-index {
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Sofia', "Arial Black", "Arial Bold", Gadget, sans-serif;
+  }
+
+.loginform {
+ text-align: center;
+ background-color: white;
+ font-size: 20px;
+ font-weight: bold;
+ padding: 0px;
+ border-style: solid;
+}
+
+#Login{
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-style: solid;
+  border-width: 8px;
+
+}
+
+#Info{
+  margin: 0;
+  margin-top: 0;
+}
+
+
+
+/*INDEX PAGE HTML*//*INDEX PAGE HTML*//*INDEX PAGE HTML*//*INDEX PAGE HTML*/
+
 
 /*WELCOME PAGE CSS*//*WELCOME PAGE CSS*//*WELCOME PAGE CSS*//*WELCOME PAGE CSS*/
 .welcome-container {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
+  font-family: 'Sofia', "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
 
-.navbar-welcomepage {
+.topnav {
   background-color: lightgray;
-  text-align: center;
+  overflow: hidden;
 }
 
-.navbar-welcomepage ul {
-  list-style-type: none;
-  display: inline-block;
-}
-
-.navbar-welcomepage li {
+.topnav a {
   float: left;
-  margin: 0;
-}
-
-.navbar-welcomepage a {
   text-decoration: none;
   color: red;
   padding: 10px 20px;
@@ -72,8 +98,52 @@
   font-size: 140%;
 }
 
-.navbar-welcomepage a:hover {
-  background-color: black;
+.topnav a:hover {
+   background-color: red;
+   color: black;
+}
+
+.active {
+  background-color: gray;
+  color: red;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .title-registration {
+  font-size: 3.583em; /*(57.331px/16px=3.583em) Minor 3rd */
+}
+
+
+label {
+  font-size: 1.728em; /*(27.648px/16px=1.728em) Minor 3rd */
+}
+
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .title-h1 {
@@ -174,6 +244,7 @@
   margin: 0 auto;
   text-align: center;
   background-color: white;
+  font-family: 'Sofia', "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
 
 .navbar-academics {
@@ -277,8 +348,8 @@
 .container-registration {
   max-width: 960px;
   margin: 0 auto;
-  font-family: 'Roboto Condensed';
   text-align: center;
+  font-family: 'Roboto Condensed', "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
 
 .title-registration{
@@ -342,35 +413,6 @@ input[type=text], [type=submit]{
 }
 
 
-@media screen and (min-width: 400px){
-
-
-.title-registration {
-  font-size: 3.583em; /*(57.331px/16px=3.583em) Minor 3rd */
-}
-
-
-label {
-  font-size: 1.728em; /*(27.648px/16px=1.728em) Minor 3rd */
-}
-
-}
-
-@media screen and (min-width: 960px){
-
-
-.title-registration {
-  font-size: 3.583em; /*(57.331px/16px=3.583em) Minor 3rd */
-}
-
-
-
-label {
- font-size: 1.728em; /*(27.648px/16px=1.728em) Minor 3rd */
-}
-
-}
-
 /*REGISTRATION PAGE CSS*//*REGISTRATION PAGE CSS*//*REGISTRATION PAGE CSS*/
 
 /*SUCCESS PAGE CSS*/
@@ -379,6 +421,7 @@ label {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
+  font-family: 'Roboto Condensed', "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
 
 
