@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/cssreset.css">
-<link rel="stylesheet" media="screen" href="css/login.css">
-<script src="java/java.js"></script>
+<link rel="stylesheet" media="screen" href="css/style.css">
+<script src="js/js.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <title>Illinois Institute of Technology Login</title>
 </head>
-<body onLoad="if (!hadFocus(false)) document.userid.user.focus();"> 
+<body class="loginbody" onLoad="if (!hadFocus(false)) document.userid.user.focus();"> 
 <img class="iit-banner" src="project-2-images/iitbanner.gif" alt="IIT Banner">
 <div class="container-index">
-  <form method="get" autocomplete="on" action="welcome.html" onsubmit="xferFocus(this)">
+  <form class="loginform" method="get" autocomplete="on" action="welcome.html" onsubmit="xferFocus(this)">
     <fieldset id="Login"><h1>My IIT Login</h1></fieldset>
     <fieldset id="Info">
       <p><label>Username: </label></p>
