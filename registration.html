@@ -5,24 +5,26 @@
  <title>Registration</title>
  <link rel="stylesheet" type="text/css" href="css/cssreset.css">
  <link rel="stylesheet" type="text/css" href="css/style.css">
+ <script src="js/js.js"></script>
 </head>
 <body>
   <img class="iit-banner" src="project-2-images/iitbanner.gif" alt="IIT Banner">
   <header>
-    <button class="logoutbutton" onclick="window.location.href='index.html'"><img src="project-2-images/iconbutton.jpg" class= "iconButton" alt="logout"></button>
-    <nav class="navbar-registration"> 
-      <ul>
-        <li><a href="welcomepage.html">Welcome</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="welcomepage.html">Student Life</a></li>
-        <li><a href="welcomepage.html">Finances</a></li>
-        <li><a href="welcomepage.html">Athletics</a></li>
-        <li><a href="welcomepage.html">Library</a></li>
-        <li><a href="welcomepage.html">Research</a></li>
-        <li><a href="welcomepage.html">My Stuff</a></li>
-        <li><a href="welcomepage.html">Training and Support</a></li>
-      </ul>
-    </nav>
+     <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="welcomepage.html">Welcome</a>
+        <a href="academics.html" class="active">Academics</a>
+        <a href="welcomepage.html">Student Life</a>
+        <a href="welcomepage.html">Finances</a>
+        <a href="welcomepage.html">Athletics</a>
+        <a href="welcomepage.html">Library</a>
+        <a href="welcomepage.html">Research</a>
+        <a href="welcomepage.html">My Stuff</a>
+        <a href="welcomepage.html">Training and Support</a>
+        <button class="logoutbutton" onclick="window.location.href='index.html'"><img src="project-2-images/iconbutton.png" class= "iconButton" alt="logout"></button>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </div>
+   </nav>
   </header>
   <div class="container-registration">
   <h1 class="title-registration">Register For Classes</h1>
@@ -31,7 +33,7 @@
       <label> PIN: </label><input type="text">
       <p></p>
       <label> Class 1: </label>
-        <form>
+        <form action="#null">
           <select name="Classes">
             <option value="No Classes Selected">None</option>
             <option value="ITM 301 Intro OS and Hardware I">ITM 301 Intro OS and Hardware I</option>
@@ -53,7 +55,7 @@
         </form>
       <p></p>
       <label> Class 2: </label>
-      <form>
+      <form action="#null">
           <select name="Classes">
             <option value="No Classes Selected">None</option>
             <option value="ITM 301 Intro OS and Hardware I">ITM 301 Intro OS and Hardware I</option>
@@ -75,7 +77,7 @@
         </form>
       <p></p>
          <label> Class 3: </label>
-      <form>
+      <form action="#null">
           <select name="Classes">
             <option value="No Classes Selected">None</option>
             <option value="ITM 301 Intro OS and Hardware I">ITM 301 Intro OS and Hardware I</option>
@@ -97,7 +99,7 @@
         </form>
       <p></p>
       <label> Class 4: </label>
-      <form>
+      <form action="#null">
           <select name="Classes">
             <option value="No Classes Selected">None</option>
             <option value="ITM 301 Intro OS and Hardware I">ITM 301 Intro OS and Hardware I</option>
@@ -119,7 +121,7 @@
         </form>
       <p></p>
       <label> Class 5: </label>
-      <form>
+      <form action="#null">
           <select name="Classes">
             <option value="No Classes Selected">None</option>
             <option value="ITM 301 Intro OS and Hardware I">ITM 301 Intro OS and Hardware I</option>
@@ -141,7 +143,7 @@
         </form>
       <p></p>
       <label> Class 6: </label>
-      <form>
+      <form action="#null">
           <select name="Classes">
             <option value="No Classes Selected">None</option>
             <option value="ITM 301 Intro OS and Hardware I">ITM 301 Intro OS and Hardware I</option>
