@@ -15,7 +15,8 @@ return false;
 }
 
 if(b=="")
-{alert("Please Enter the password");
+{
+alert("Please Enter the password");
 document.form.password.focus();
 return false;
 }
