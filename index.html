@@ -11,13 +11,13 @@
 <body class="loginbody" onLoad="if (!hadFocus(false)) document.userid.user.focus();"> 
 <img class="iit-banner" src="project-2-images/iitbanner.gif" alt="IIT Banner">
 <div class="container-index">
-  <form class="loginform" method="get" autocomplete="on" action="welcome.html" onsubmit="xferFocus(this)">
+  <form class="loginform" method="get" autocomplete="on" action="welcome.html" onsubmit="xferFocus(this)" onsubmit="return validation()">
     <fieldset id="Login"><h1>My IIT Login</h1></fieldset>
     <fieldset id="Info">
       <p><label>Username: </label></p>
-      <input type="text" required autocomplete="name">
+      <input type="text" name="name">
       <p><label>Password: </label></p>
-      <input type="Password">
+      <input type="Password" name="password">
       <p></p>
       <input type="button" class="btn" name="login_btn" value="login" onclick="location.href='welcomepage.html';" tabindex="3">
       <p></p>
